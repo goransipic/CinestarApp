@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
+    android:layout_height="400dp"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
-    card_view:cardElevation="4dp"
     card_view:cardBackgroundColor="@color/colorPrimary"
-    card_view:cardUseCompatPadding="true"
-    android:layout_height="300dp">
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -28,22 +28,44 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/spiritcover"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/spiritcover" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="@android:drawable/divider_horizontal_dark"
-                android:layout_weight="40">
+                android:layout_weight="40"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="110dp"
-                    android:text="Demo 20"/>
+                    android:textColor="@android:color/white"
+                    android:textAppearance="?android:textAppearanceMediumInverse"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="100dp"
+                    android:text="Spirit: Stallion of the Cimarron" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="100dp"
+                    android:numStars="2" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/border_button_final"
+                    android:text="OD 17,00 HRK"/>
 
             </LinearLayout>
 
@@ -53,15 +75,13 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="90dp"
-            android:src="@drawable/spiritcover"
             android:layout_gravity="center_vertical"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="16dp"
-            android:scaleType="centerCrop"/>
+            android:layout_marginTop="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/spiritcover" />
 
     </FrameLayout>
-
-
 
 
 </android.support.v7.widget.CardView>
